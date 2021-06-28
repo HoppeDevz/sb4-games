@@ -30,6 +30,7 @@ routes.post("/get_user_by_userlogin", JwtMiddleWare, getUserByUserLogin);
 routes.put("/updateavatar", JwtMiddleWare, updateUserAvatar);
 routes.put("/updatename", JwtMiddleWare, updateUserName);
 routes.put("/updatedesc", JwtMiddleWare, UserController.updateUserDesc);
+routes.put("/updatebackground", JwtMiddleWare, UserController.updateUserBackground)
 
 routes.post("/increase_game_counter", JwtMiddleWare, GameCounterController.IncreaseGameTime);
 

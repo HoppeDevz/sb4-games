@@ -347,6 +347,22 @@ exports.updateUserAvatar = async (req, res) => {
     }
 }
 
+exports.updateUserBackground = async (req, res) => {
+    const { userLogin } = req.headers.decoded;
+    const { userBackground } = req.body;
+
+    try {
+        const userResults = await SyncSQL('UPDATE users SET backgroundIndex = ? WHERE userLogin = ?', [userBackground, userLogin])
+        return res.status(204).json(userResults)
+    } catch(err) {
+        console.log(err)
+        return res.status(500).send({
+            error: true,
+            error_msg: "Internal Error"
+        })
+    }
+}
+
 exports.updateUserName = async (req, res)=>{
     const { userLogin } = req.headers.decoded;
     const { userName } = req.body;

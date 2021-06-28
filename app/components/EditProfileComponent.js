@@ -70,6 +70,22 @@ const EditProfileComponent = () => {
                 console.log(err);
             }
         }
+
+        if (edit_option == 3) {
+            let Background = Number(data.split(".jpg")[0]);
+            let jwt_token = localStorage.getItem("jwt_token");
+            let parsed_data = JSON.parse(localStorage.getItem("user_info"));
+
+            try {
+                await PUT_REQUEST_WITH_JWT_PARAM("/updatebackground", { userBackground: Background }, jwt_token);
+                parsed_data.backgroundIndex = Background;
+
+                localStorage.setItem("user_info", JSON.stringify(parsed_data));
+                SetUserAvatarIndex(Background);
+            } catch(err) {
+                console.log(err);
+            }
+        }
     }
 
     return(
@@ -180,7 +196,7 @@ const EditProfileComponent = () => {
                                 <div className="edit-profile-edit-option-3-background-list">
                                     {AllBackgrounds.map((background, index) => {
                                         return(
-                                            <div className="edit-profile-edit-option-3-background-item" key={index} style={{
+                                            <div onClick={() => UpdateUserInfoHandler(3, background)} className="edit-profile-edit-option-3-background-item" key={index} style={{
                                                 backgroundImage: `url(${ACCOUNTS_API_ADRESS}/static/backgrounds/${background})`,
                                                 backgroundSize: "cover",
                                                 backgroundPosition: "center"
