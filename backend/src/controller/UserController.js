@@ -79,8 +79,9 @@ exports.getUserByUserLogin = async (req, res) => {
             let games_hours = [];
 
             for (let game_row of r) {
+                if (game_row.game == "undefined") return;
                 let rows = await SyncSQL("SELECT * FROM games WHERE name = ?", game_row.game);
-                games_hours.push({ game_name: game_row.game, game_banner: rows[0].backgroundIndex, counter: game_row.counter });
+                games_hours.push({ game_name: game_row.game, game_banner: rows[0].banner_url, counter: game_row.counter });
             }
 
             return res.status(200).send({
