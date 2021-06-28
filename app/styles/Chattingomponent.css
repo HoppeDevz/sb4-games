@@ -1,0 +1,133 @@
+.chat-component {
+    width: 500px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.chat-component .header {
+    margin-left: 10px;
+
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    font-size: 12px;
+    font-family: "Roboto", "Montserrat", sans-serif;
+}
+
+
+.chat-component  .messages-area {
+    width: 490px;
+    height: 400px;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+
+    background-color: var(--button-second-color);
+    border-radius: 5px;
+}
+
+/* messages-area width = 490px */
+.chat-component .messages-area .sended-message-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-end;
+    align-items: center;
+}
+.chat-component .messages-area .sended-message {
+    max-width: 350px;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+    margin-right: 1vw;
+
+    font-weight: 300;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+
+    color: white;
+    background-color: var(--button-first-color);
+    border-radius: 5px;
+}
+
+.chat-component .messages-area .received-message-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: flex-start;
+    align-items: center;
+}
+.chat-component .messages-area .received-message {
+    max-width: 350px;
+
+    padding-left: 2vw;
+    padding-right: 2vw;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+
+    margin-left: 1vw;
+
+    font-weight: 300;
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+
+    color: white;
+    background-color: var(--action-top-bar-button-hover);
+    border-radius: 5px;
+}
+
+.chat-component .send-message-area {
+    width: 495px;
+    height: 50px;
+
+    display: flex;
+    align-self: center;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.chat-component .send-message-area input {
+    width: 490px;
+
+    outline: none;
+    border: none;
+
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+    padding-top: 1.4vh;
+    padding-bottom: 1.4vh;
+
+    border-radius: 5px;
+
+    background-color: var(--button-second-color);
+    color: white;
+}

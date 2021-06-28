@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+}
+
+:root {
+    --background-application: #15171e;
+    --text-color-one: #7fbcea;
+
+    --button-first-color: #0074e0;
+    --button-hover-color: #148eff;
+    --button-second-color: #3d3e44;
+    --button-text-color: #fbffff;
+
+    --action-top-bar-button-hover: #23252b48;
+
+    --input-background-color: #101117;
+    --input-focus-border-color: #1386f1;
+    --input-no-focus-border-color: #636467;
+
+    --default-profile-background-color: #212121;
+    --default-profile-mid-element-bkg-color: #141414;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+
+    background-color: var(--background-application);
+    color: var(--button-text-color);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 10%;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: var(--background-application);
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--input-background-color);
+}
+  
+/* Handle on hover */
+:-webkit-scrollbar-thumb:hover {
+    background: var(--input-background-color);
+}
+
+
+@keyframes hpp_anim_scale_in {
+    from { transform: scale(0.0); }
+    to { transform: scale(1.0); }
+}
+
+@keyframes hpp_anim_fade_in {
+    from { opacity: 0%; }
+    to { opacity: 100%; }
+}

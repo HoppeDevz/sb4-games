@@ -1,0 +1,28 @@
+.window-top-bar-container {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    -webkit-app-region: drag;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.top-bar-action-button {
+    fill: white;
+
+    padding-left: 1vw;
+    padding-right: 1vw;
+
+    width: auto;
+    height: 2vh;
+
+    margin-right: 0.5vw;
+
+    -webkit-app-region: no-drag;
+}
+
+.top-bar-action-button:hover {
+    background-color: var(--action-top-bar-button-hover);
+}

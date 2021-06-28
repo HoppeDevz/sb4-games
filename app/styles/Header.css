@@ -1,0 +1,42 @@
+.window-header {
+    width: 95%;
+    margin-left: 2.5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 2vh;
+}
+
+.window-header-left-container {
+    display: flex;
+    align-items: center;
+}
+.window-header-left-container span {
+    margin-right: 2vw;
+}
+
+.window-header-right-container {
+    display: flex;
+    align-items: center;
+}
+
+.window-header .window-header--logo {
+    width: auto;
+    height: 7vh;
+
+    margin-right: 2vw;
+}
+
+.window-header .window-header--option {
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+}
+
+.logout-icon {
+    cursor: pointer;
+}

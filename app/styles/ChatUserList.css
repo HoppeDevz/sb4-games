@@ -1,0 +1,27 @@
+.chat-user-list {
+    width: 200px;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    overflow: auto;
+
+    border-right: 1px solid var(--input-no-focus-border-color);
+}
+
+.chat-user {
+    width: 80%;
+    margin-left: 10%;
+
+    cursor: pointer;
+
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+
+    font-size: 13px;
+    font-family: "Roboto", sans-serif;
+}

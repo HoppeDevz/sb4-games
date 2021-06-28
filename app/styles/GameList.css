@@ -1,0 +1,78 @@
+.game-list-container {
+    width: 95%;
+    margin-left: 2.5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.game-list-container .game-list--enhanced-box {
+    width: 16vw;
+    height: 8vh;
+    
+    pointer-events: none;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+
+.game-list--enhanced-box img {
+    width: 2vw;
+    height: 2vw;
+}
+
+.game-list--enhanced-box span {
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+}
+
+.game-list--game-bar {
+    width: 98%;
+    height: 8vh;
+    margin-left: 1%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+
+.game-select {
+    cursor: pointer;
+
+    width: 8vh;
+    height: 8vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-select img {
+    height: 4vh;
+    width: auto;
+}
+
+.game-selected {
+    border-bottom: 2px solid var(--button-first-color);
+    background-color: rgba(255, 255, 255, 0.2);
+    
+    animation: hpp_background 0.3s;
+}
+
+@keyframes hpp_background {
+    from { background-color: rgba(255, 255, 255, 0.0) }
+    to { background-color: rgba(255, 255, 255, 0.2) }
+}

@@ -1,0 +1,6 @@
+module.exports = {
+    JWT_SECRET: "cb2be2ebb56059d9807387596ce6ac59ecb09df2129e05b77a46e34549f520b5",
+
+    SOCKET_SERVER_PORT: 4444,
+    HTTP_API_PORT: 3333
+}

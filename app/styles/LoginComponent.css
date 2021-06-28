@@ -1,0 +1,123 @@
+.user-login-container {
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.user-login-components-container {
+    width: 30vw;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.login-page-register-link {
+    color: var(--button-text-color);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+
+    margin-top: 3vh;
+}
+
+.register-word-link {
+    cursor: pointer;
+    color: var(--button-hover-color);
+}
+
+.login-logo-in-center-offset {
+    margin-top: 8vh;
+
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 5vh;
+}
+
+.login-logo-in-center-offset h1 {
+    font-family: "Roboto", sans-serif;
+    margin-left: 2vw;
+}
+
+.login-logo-in-center-offset img {
+    width: 10vw;
+    height: auto;
+}
+
+.user-login-container input {
+    outline: none;
+
+    border: 1px solid var(--input-no-focus-border-color);
+    border-radius: 4px;
+
+    background-color: var(--input-background-color);
+
+    width: 30vw;
+
+    padding-top: 0.8vw;
+    padding-bottom: 0.8vw;
+
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+
+    color: var(--button-text-color);
+
+    margin-top: 1vh;
+}
+
+.user-login-container input:focus {
+    border: 1px solid var(--input-focus-border-color);
+}
+
+.user-login-container button {
+    margin-top: 2vh;
+
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    width: 30vw;
+
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+    border-radius: 4px;
+
+    color: var(--button-text-color);
+    
+    font-family: "Roboto", sans-serif;
+    background-color: var(--button-first-color);
+}
+
+.login-err-alert-span {
+    margin-top: 1vh;
+
+    font-size: 11px;
+    color: red;
+
+    font-family: "Roboto", sans-serif;
+
+    animation: hpp_anim_fade_in 0.3s;
+}
+
+.login-sucess-alert-span {
+    margin-top: 1vh;
+
+    font-size: 11px;
+    color: green;
+
+    font-family: "Roboto", sans-serif;
+
+    animation: hpp_anim_fade_in 0.3s;
+}

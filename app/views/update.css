@@ -1,0 +1,64 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently */
+
+    color: ivory;
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --background-application: #15171e;
+    --text-color-one: #7fbcea;
+
+    --button-first-color: #0074e0;
+    --button-hover-color: #148eff;
+    --button-second-color: #3d3e44;
+    --button-text-color: #fbffff;
+
+    --action-top-bar-button-hover: #23252b48;
+}
+
+body {
+    background-color: var(--background-application);
+    color: var(--button-text-color);
+}
+
+.att-area {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+  
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+  
+/* Handle on hover */
+:-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
