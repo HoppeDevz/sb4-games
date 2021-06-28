@@ -1,6 +1,6 @@
-const LAUNCHER_API_ADRESS = "http://192.168.0.125:40120";
-const ACCOUNTS_API_ADRESS = "http://192.168.0.125:3333";
-const SOCKET_API_ADRESS = "http://192.168.0.125:4444";
+const LAUNCHER_API_ADRESS = "http://191.96.224.194:40120";
+const ACCOUNTS_API_ADRESS = "http://191.96.224.194:3333";
+const SOCKET_API_ADRESS = "http://191.96.224.194:4444";
 
 const POST_REQUEST_WITH_JWT_PARAM = (url, body, jwt) => new Promise((resolve, reject) => {
     const axios = require("axios");
